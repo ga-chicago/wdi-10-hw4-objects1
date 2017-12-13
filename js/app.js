@@ -62,6 +62,80 @@ object with an array: let stuNameAndLoc = {
 }
 */
 
+// Take it Easy
+// 1.
+let roygbiv = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+// 2.
+console.log(roygbiv[4])
+// 3.
+let kait = {
+	favFood: 'pizza',
+	hobby: 'running',
+	city: 'Chicago',
+	favData: 'strings'
+}
+// 4. 
+console.log(kait.hobby)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
