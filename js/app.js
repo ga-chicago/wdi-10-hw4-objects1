@@ -121,14 +121,31 @@ const bondFilms = [
     { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
 
+let array1 = [1,2,3,4]
+array1.push(5)
+
 let bondTitles = [];
+// go through each item of array
 for(i=0; i < bondFilms.length; i++){
-    bondTitles[bondFilms[i].title] = bondFilms.title;
+    // add/push this title to  array
+    bondTitles.push(bondFilms[i].title)
 }
 console.log(bondTitles);
 
 
+let oddBonds = [];
+for(i=0; i < bondFilms.length; i++){
+    if([bondFilms[i].year] % 2 === 1){
 
+        oddBonds.push(bondFilms[i].year)
+    }
+}
+console.log(oddBonds);
+
+
+for (i=0; i < bondFilms.length; i++){
+    parseInt(bondFilms.gross[i])
+}
 
 
 
