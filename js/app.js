@@ -199,6 +199,28 @@ for (let i = 0; i < bondFilms.length; i++) {
 
 console.log(bondTitles);
 
+let oddBonds = [];
+
+for (let i = 0; i < bondFilms.length; i++) {
+	if (bondFilms[i].year % 2 === 1) {
+		oddBonds.push(bondFilms[i].year);
+	}
+}
+
+console.log(oddBonds);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
