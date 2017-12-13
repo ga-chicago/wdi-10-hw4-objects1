@@ -4,118 +4,118 @@
 
 //1. I would use a Boolean data type tucked within an object to represent the data. It would look something like:
 
-// const lightSwitch = {
-// 	flippedUp: true
-// }
+const lightSwitch = {
+	flippedUp: true
+}
 
 //2. I would use a string data type stored as a property of an object
 
-// const userInfo = {
-// 	email: 'user@userwebsite.com'
-// }
+const userInfo = {
+	email: 'user@userwebsite.com'
+}
 
 //3. I would use an object with keys that list the attributes of the spaceship and either strings or arrays of strings that describe those attributes
 
-// const spaceShip = {
-// 	hull: "Titanium Plated Hull",
-// 	weapons: ["Laser Blasters", "Tractor Beam"],
-// 	propulsion: "Warp Drive"
-// }
+const spaceShip = {
+	hull: "Titanium Plated Hull",
+	weapons: ["Laser Blasters", "Tractor Beam"],
+	propulsion: "Warp Drive"
+}
 
 //4. I would use an array containing strings 
 
-// const students = ["Michael", "Somers", "Anthony", "Kait"];
+const students = ["Michael", "Somers", "Anthony", "Kait"];
 
 //5. I would use an array of objects containing key value pairs representing their attributes listed in strings
 
-// const classList = [ { 
-// 	name: "Michael",
-// 	location: "classroom one"
-// 	}, {
-// 	name: "Somers",
-// 	location: "kitchen"
-// 	}, {
-// 	name: "Anthony",
-// 	location: "classroom one"
-// 	}, {
-// 	name: "Kait",
-// 	location: "classroom one"
-// 	}
-// ]
+const classList = [ { 
+	name: "Michael",
+	location: "classroom one"
+	}, {
+	name: "Somers",
+	location: "kitchen"
+	}, {
+	name: "Anthony",
+	location: "classroom one"
+	}, {
+	name: "Kait",
+	location: "classroom one"
+	}
+]
 
 //6. I would use an array of objects containting key value pairs representing their attributes listed in strings or strings within an array
 
-// const classListTwo = [ { 
-// 	name: "Michael",
-// 	location: "classroom one",
-// 	favoriteShows: ["Breaking Bad", "Parks and Rec"]
-// 	}, {
-// 	name: "Somers",
-// 	location: "kitchen",
-// 	favoriteShows: ["The Wire", "America's Next Top Chef"]
-// 	}, {
-// 	name: "Anthony",
-// 	location: "classroom one",
-// 	favoriteShows: ["Game of Thrones", "Star Trek"]
-// 	}, {
-// 	name: "Kait",
-// 	location: "classroom one",
-// 	favoriteShows: ["Road Truckers", "NFL Pregame Sunday"]
-// 	}
-// ]
+const classListTwo = [ { 
+	name: "Michael",
+	location: "classroom one",
+	favoriteShows: ["Breaking Bad", "Parks and Rec"]
+	}, {
+	name: "Somers",
+	location: "kitchen",
+	favoriteShows: ["The Wire", "America's Next Top Chef"]
+	}, {
+	name: "Anthony",
+	location: "classroom one",
+	favoriteShows: ["Game of Thrones", "Star Trek"]
+	}, {
+	name: "Kait",
+	location: "classroom one",
+	favoriteShows: ["Road Truckers", "NFL Pregame Sunday"]
+	}
+]
 
 
 //Take it easy
 
 // //1. 
 
-// const rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+const rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
 // //2.
 
-// rainbow[1];
+rainbow[1];
 
 // //3. 
 
-// const Michael = {
-// 	favFood: "Pasta",
-// 	hobby: "Cooking",
-// 	currentTown: "Chicago",
-// 	favDataType: "Booleans"
-// }
+const Michael = {
+	favFood: "Pasta",
+	hobby: "Cooking",
+	currentTown: "Chicago",
+	favDataType: "Booleans"
+}
 
 // //4.
 
-// Michael.hobby;
+Michael.hobby;
 
 
 //Crazy Object!
 
-// const crazyObject = {
-//   taco: [{meat: 'steak',
-//          cheese: ['panela', 'queso', 'chihuahua']},
-//          {meat: 'chicken',
-//           salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]},
-//         ],
-//   larry: {
-//     nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
-//     quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
-//     characters: [{
-//       name: "Jeff",
-//       occupation: "manager"
-//     },
-//     {
-//       name: "funkhauser",
-//       occupation: "tv dude"
-//     },
-//     {
-//       name: "susie",
-//       occupation: "jeffs wife",
-//       favourtieHobby: "Swearing at Larry and Jeff"
-//     },
-//     ]
-//   }
-// }
+const crazyObject = {
+  taco: [{meat: 'steak',
+         cheese: ['panela', 'queso', 'chihuahua']},
+         {meat: 'chicken',
+          salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]},
+        ],
+  larry: {
+    nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+    quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
+    characters: [{
+      name: "Jeff",
+      occupation: "manager"
+    },
+    {
+      name: "funkhauser",
+      occupation: "tv dude"
+    },
+    {
+      name: "susie",
+      occupation: "jeffs wife",
+      favourtieHobby: "Swearing at Larry and Jeff"
+    },
+    ]
+  }
+}
 
 // //1. 
 
@@ -140,25 +140,25 @@
 
 //Object-ception
 
-// const inception = {
-//    reality: {
-//        dreamLayer1: {
-//            dreamLayer2: {
-//                dreamLayer3: {
-//                    dreamLayer4: {
-//                        dreamLayer5: {
-//                            dreamLayer6: {
-//                                limbo: "Joseph Gordon Levitt"
-//                           }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-// }
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
 
-// inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null;
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null;
 
 // console.log(inception);
 
@@ -226,34 +226,53 @@ console.log(totalGross);
 
 //Log the object containing the actor who has appeared in the least number of films
 
+//declare empty object to contain the names of the actors as keys and they're number of appearances as values
 let actorFrequency = {};
 
+//loop through the array containing the objects of bond films, adding the each new actor name as a key with a value of 0, or incrementing already existing actor keys in the object
 for (let i = 0; i < bondFilms.length; i++) {
+	//for each loop, get the name of the actor stored as a key in that object
 	let actor = bondFilms[i].actor;
+	//if that name does not yet appear as a key in the new object, add it as a key with a value of 1
 	if (!actorFrequency[actor]) {
 		actorFrequency[actor] = 1;
 	}
+	//else if that actor name -does- appear, add it as a key with and increment it's current value by one
 	else {
 		actorFrequency[actor] += 1;
 	}
 }
 
+
+//declare a number to track the number of films each actor has appeared in as you loop through the keys in the new object
 let smallest = 10;
+//declare an empty string to hold the name of the current actor with the least number of appearances as you loop throug the keys in the new object
 let leastAppeared = "";
+//loop through the keys in the new object
 for (key in actorFrequency) {
+	//if the current key has a value smaller than the earlier declared 'smallest' value, then
 	if (actorFrequency[key] < smallest) {
+		//update the 'smallest' variable to reflect the number of times the actor who has appeared in the fewest number of films has appeared
 		smallest = actorFrequency[key];
+		//update the string variable 'leastAppeared' to track the key name of the current actor that has appeared the fewest number of times
 		leastAppeared = key;
 	}
 }
 
+//loop through the initial array once more
 for (let i = 0; i < bondFilms.length; i++) {
+	//loop through the key names of the objects at each index of the array one at a time
 	for (key in bondFilms[i]) {
+		//if the value of one of the key names of the current object of the index of the initial array we're looping through contains an identical value to the variable "leastAppeared" which represents the actor who has appeared in the fewest films,
 		if (bondFilms[i][key] === leastAppeared) {
+			//print the object located at the current index in the loop WHICH IS WHAT THE PROMPT ASKED FOR
 			console.log(bondFilms[i]);
 		}
 	}
 }
+
+
+
 
 
 
