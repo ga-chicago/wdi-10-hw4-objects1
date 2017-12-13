@@ -147,7 +147,15 @@ for(i = 0; i < bondFilms.length; i++){
 	}
 }
 
+let totalBondRev = 0
 
+for(i = 0; i < bondFilms.length; i++){
+	 //find current bond movie revenue and remove commas
+	let cleanStrRev = bondFilms[i].gross.replace(/,/gi, "").replace("$","")
+	totalBondRev += parseInt(cleanStrRev, 10)
+}
+
+console.log(totalBondRev)
 
 
 
