@@ -28,3 +28,34 @@ console.log("A list of student names from our class, each with a location and ea
 console.log("Answer: object. let example = {sergio: {location: Chicago, favMovies: ['gsd','gsd','dgsdsf']}, sergio2: {location: Chicago, favMovies: ['gsd','gsd','dgsdsf']}, sergio3: {location: Chicago, favMovies: ['gsd','gsd','dgsdsf']}}");
 console.log("\n");
 console.log("\n");
+
+
+// Take it Easy
+
+// Make an array that holds all of the colors of the rainbow.
+let rainbowColors = ["yellow","blue","red","purple","green"];
+console.log("\n");
+
+// Write code that will access "blue" from the rainbow array.
+rainbowColors[1];
+console.log("\n");
+
+// Make an object that is called your name and holds the information about your favorite food, 
+// a hobby, the name of the town that you live in currently, and your favorite datatype.
+let sergio = {
+	favFood: "pizza",
+	hobby: "gaming",
+	town: "chicago",
+	favDataType: "boolean"
+}
+
+// Write code that will access your hobby from the object that you just created.
+sergio.hobby;
+
+
+
+
+
+
+
+
