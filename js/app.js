@@ -209,9 +209,17 @@ for (let i = 0; i < bondFilms.length; i++) {
 
 console.log(oddBonds);
 
+let totalGross = 0;
 
+for (let i = 0; i < bondFilms.length; i++) {
+	//loops through the bondFilms property "gross" and replaces all non-alphanumeric characters with empty spaces(\W selects all non-alphnumeric and g allows for it to continue after it finds the first instance)
+	let cleanGross = bondFilms[i].gross.replace(/\W/g, '');
+	//converts the cleanGross string to a number in base 10
+	let convertGross = parseInt(cleanGross, 10);
+	totalGross += convertGross;
+}
 
-
+console.log(totalGross);
 
 
 
