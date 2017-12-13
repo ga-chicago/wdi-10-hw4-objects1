@@ -116,6 +116,27 @@ console.log(crazyObject.larry.nicknames[1])
 // The object the contains the name funkhauser
 console.log(crazyObject.larry.characters[1])
 
+// Object-ception
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
+
+// OMG. Too many layers.
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null
 
 
 
