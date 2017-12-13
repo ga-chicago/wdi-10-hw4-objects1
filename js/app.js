@@ -1,5 +1,5 @@
 console.log("works");
-//ANSWER THE FOLLOWING******************
+//******************ANSWER THE FOLLOWING******************
 //1 a light switch with on/off
 //  I would store it in an object function by using lightSwitch as a key
 // and then function(){// turn on //turn off}
@@ -23,3 +23,15 @@ console.log("works");
 //6 "" with more.
 // I would add a key favoriteTVshows to my previous student object to each
 // of the students individual objects within the larger student object
+
+//******************TAKE IT EASY****************************
+let rainbowColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+console.log(rainbowColors[4]);
+
+let sierra = {
+    favFood: "enchiladas",
+    hobby: "guitar",
+    lives: "chicago",
+    favDataType: "objects"
+};
+console.log(sierra.hobby);
