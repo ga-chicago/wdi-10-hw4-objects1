@@ -2,13 +2,13 @@
 
 //Answer the following
 
-//1. I would use a Boolean data type to represent the data. It would look something like:
+//1. I would use a Boolean data type tucked within an object to represent the data. It would look something like:
 
 // const lightSwitch = {
 // 	flippedUp: true
 // }
 
-//2. I would use a string data type to store an email address.
+//2. I would use a string data type stored as a property of an object
 
 // const userInfo = {
 // 	email: 'user@userwebsite.com'
@@ -45,29 +45,48 @@
 
 //6. I would use an array of objects containting key value pairs representing their attributes listed in strings or strings within an array
 
-const classListTwo = [ { 
-	name: "Michael",
-	location: "classroom one",
-	favoriteShows: ["Breaking Bad", "Parks and Rec"]
-	}, {
-	name: "Somers",
-	location: "kitchen",
-	favoriteShows: ["The Wire", "America's Next Top Chef"]
-	}, {
-	name: "Anthony",
-	location: "classroom one",
-	favoriteShows: ["Game of Thrones", "Star Trek"]
-	}, {
-	name: "Kait",
-	location: "classroom one",
-	favoriteShows: ["Road Truckers", "NFL Pregame Sunday"]
-	}
-]
+// const classListTwo = [ { 
+// 	name: "Michael",
+// 	location: "classroom one",
+// 	favoriteShows: ["Breaking Bad", "Parks and Rec"]
+// 	}, {
+// 	name: "Somers",
+// 	location: "kitchen",
+// 	favoriteShows: ["The Wire", "America's Next Top Chef"]
+// 	}, {
+// 	name: "Anthony",
+// 	location: "classroom one",
+// 	favoriteShows: ["Game of Thrones", "Star Trek"]
+// 	}, {
+// 	name: "Kait",
+// 	location: "classroom one",
+// 	favoriteShows: ["Road Truckers", "NFL Pregame Sunday"]
+// 	}
+// ]
 
 
+//Take it easy
 
+// //1. 
 
+// const rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
+// //2.
+
+// rainbow[1];
+
+// //3. 
+
+// const Michael = {
+// 	favFood: "Pasta",
+// 	hobby: "Cooking",
+// 	currentTown: "Chicago",
+// 	favDataType: "Booleans"
+// }
+
+// //4.
+
+// Michael.hobby;
 
 
 
