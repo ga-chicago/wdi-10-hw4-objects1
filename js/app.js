@@ -222,9 +222,38 @@ for (let i = 0; i < bondFilms.length; i++) {
 console.log(totalGross);
 
 
+//Digging Deeper
 
+//Log the object containing the actor who has appeared in the least number of films
 
+let actorFrequency = {};
 
+for (let i = 0; i < bondFilms.length; i++) {
+	let actor = bondFilms[i].actor;
+	if (!actorFrequency[actor]) {
+		actorFrequency[actor] = 1;
+	}
+	else {
+		actorFrequency[actor] += 1;
+	}
+}
+
+let smallest = 10;
+let leastAppeared = "";
+for (key in actorFrequency) {
+	if (actorFrequency[key] < smallest) {
+		smallest = actorFrequency[key];
+		leastAppeared = key;
+	}
+}
+
+for (let i = 0; i < bondFilms.length; i++) {
+	for (key in bondFilms[i]) {
+		if (bondFilms[i][key] === leastAppeared) {
+			console.log(bondFilms[i]);
+		}
+	}
+}
 
 
 
