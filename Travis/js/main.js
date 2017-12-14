@@ -164,13 +164,35 @@ const bondFilms = [
 
 // Why does this one workk?
 
-let filmTitles = [bondFilms[1].title];
+let filmTitles = [];
 	for (i in bondFilms){
 	// add to array
 	filmTitles.push(bondFilms[i].title)
 	}
 
 console.log(filmTitles)
+
+
+let oddBonds = [];
+	for (i in bondFilms){
+		// check if odd
+		if(bondFilms[i].year % 2==0){
+		// add to array
+		oddBonds.push(bondFilms[i].title)
+	}
+}
+
+console.log(oddBonds);
+
+
+
+
+
+
+
+
+
+
 
 
 
