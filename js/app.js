@@ -70,3 +70,32 @@ favoriteDatatype: "objects"
 
 ethan.hobby
 
+//crazy object
+
+
+//1
+
+conlose.log(crazyObject.taco[1].salsa[5])
+
+
+//2
+
+
+console.log(crazyObject.larry.quotes[0])
+
+
+//3
+
+console.log(crazyObjet.larry.characters[2].favouriteHobby)
+
+
+//4
+
+console.log(crazyObjects.larry[0].nicknames[1]_
+
+
+//5
+
+console.log(crazyObject.larry[1].name)
+
+
