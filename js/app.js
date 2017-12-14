@@ -103,7 +103,7 @@ inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dr
 
 console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo)
 
-*/
+
 
 <!-- //Bond Films -->
 
@@ -268,3 +268,7 @@ for(i = 0; i < bondFilms.length; i++){
 	bondRev += parseInt(cleanStrRev, 10)
 }
 console.log(bondRev)
+
+*/
+
+// I worked on this on my desktop and I could not, for the life of me get the code to work, I give up.
