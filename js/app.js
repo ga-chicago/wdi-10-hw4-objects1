@@ -152,3 +152,34 @@ for(let i in bondFilms) {
   }
 }
 
+
+//digging deeper
+
+let bondActors = {
+
+}
+//iterating over the bond films array 
+for(i=0;i<bondFilms.length;i++){
+  bondActors
+}\
+  bondActors[bondFilms[i].actor] = []
+} 
+let actorKey = Object.keys(bondActors)
+
+
+for(let i = 0; i < bondFilms.length; i++){
+  bondActors[bondFilms[i].actor].push(bondFilms[i])
+} console.log(bondActors)
+
+
+
+let shortest = bondFilms
+
+for(i = 0; i < actorKey.length; i++){
+  if (bondActors[actorKey[i]].length < shortest.length) {
+    shortest = bondActors[actorKey[i]]
+  }
+  else {
+  }
+} 
+console.log(shortest[0])
