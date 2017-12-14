@@ -120,33 +120,53 @@ const bondFilms = [
     { "title" : "A View to a Kill", "year" : 1985, "actor" : "Roger Moore", "gross" : "$321,172,633" },
     { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
+// // add titles from array object to empty array
+// let array1 = [1,2,3,4]
+// array1.push(5)
 
-let array1 = [1,2,3,4]
-array1.push(5)
+// // create an empty array called bond titles
+// let bondTitles = [];
+// // go through each item of array
+// for(i=0; i < bondFilms.length; i++){
+//     // add/push this title to  array
+//     bondTitles.push(bondFilms[i].title)
+// }
+// console.log(bondTitles);
+//
+// // Add odd number of years to empty array from an array object
+// let oddBonds = [];
+// for(i=0; i < bondFilms.length; i++){
+//     if([bondFilms[i].year] % 2 === 1){
+//
+//         oddBonds.push(bondFilms[i].year)
+//     }
+// }
+// console.log(oddBonds);
 
-let bondTitles = [];
-// go through each item of array
-for(i=0; i < bondFilms.length; i++){
-    // add/push this title to  array
-    bondTitles.push(bondFilms[i].title)
-}
-console.log(bondTitles);
+// console.log(bondFilms[0].gross);
 
+// it keeps a running total
+let total = 0;
 
-let oddBonds = [];
-for(i=0; i < bondFilms.length; i++){
-    if([bondFilms[i].year] % 2 === 1){
-
-        oddBonds.push(bondFilms[i].year)
-    }
-}
-console.log(oddBonds);
-
-
+// iterate over bondFilms
 for (i=0; i < bondFilms.length; i++){
-    parseInt(bondFilms.gross[i])
-}
+    // get gross for this film
+    let money = bondFilms[i].gross;
 
+    //take the first charater off string
+    let gross = money.substr(1).replace(/,\s?/g, ""); // copied .replace(/,\s?/g, "") it somehow removed all commas
+
+    // turn gross for this film into a number
+    let number = parseInt(gross);
+    console.log(number)
+
+
+    // add number to total so far
+    total = number + total;
+
+}
+console.log(total);
+// console.log(bondFilms[i].gross);
 
 
 
