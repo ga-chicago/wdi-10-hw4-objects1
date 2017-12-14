@@ -145,6 +145,7 @@ const bondFilms = [
 
 // console.log(bondFilms[0].gross);
 
+/*
 // it keeps a running total
 let total = 0;
 
@@ -158,7 +159,7 @@ for (i=0; i < bondFilms.length; i++){
 
     // turn gross for this film into a number
     let number = parseInt(gross);
-    console.log(number)
+    // console.log(number)
 
 
     // add number to total so far
@@ -167,10 +168,28 @@ for (i=0; i < bondFilms.length; i++){
 }
 console.log(total);
 // console.log(bondFilms[i].gross);
+*/
+/***************DIGGING DEEPER ****************************/
+let actors = {};
+for(i=0; i < bondFilms.length; i++){
+    // acess each actor
+        console.log(bondFilms[i].actor)
+    // isolate into object
+   actors[bondFilms[i].actor] = actors;
+    // check and compare each charater in strings
+    // need to turn into array or array object and use slice and sort?
 
+}
+console.log(Object.keys(actors));
 
-
-
+// iterate object
+for(j=0; j < actors.length; j++){
+    if(actors[key[j]].length < something.length){
+        // check for dupliactes
+    }
+}
+// log least occuring actor
+console.log(something[0])
 
 
 
