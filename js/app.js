@@ -143,3 +143,17 @@ let onlyTitles = () => {
 onlyTitles();
 
 console.log(bondTitles);
+
+let oddBonds = [];
+
+let onlyOdds = () => {
+	for (let i = 0; i < bondFilms.length; i++) {
+		if (bondFilms[i].year % 2 === 1) {
+			oddBonds.push(bondFilms[i])
+		}
+	}
+}
+
+onlyOdds();
+
+console.log(oddBonds);
