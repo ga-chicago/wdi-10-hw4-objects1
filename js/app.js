@@ -63,7 +63,7 @@ object with an array: let stuNameAndLoc = {
 */
 
 
-// Take it Easy
+// TAKE IT EASY
 // 1. may an array with all the colors of the rainbow
 let roygbiv = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 // 2. access blue from the array
@@ -79,7 +79,8 @@ let kait = {
 console.log(kait.hobby)
 
 
-// Crazy Object
+
+// CRAZY OBJECT
 const crazyObject = {
   taco: [{meat: 'steak',
          cheese: ['panela', 'queso', 'chihuahua']},
@@ -140,7 +141,9 @@ const inception = {
 // OMG. Too many layers. Change limbo from "Joseph Gordon Levitt" to "null"
 inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null
 
-// Bond Films
+
+
+// BOND FILMS
 const bondFilms = [
   { "title" : "Skyfall", "year" : 2012, "actor" : "Daniel Craig", "gross" : "$1,108,561,008" },
   { "title" : "Thunderball", "year" : 1965, "actor" : "Sean Connery", "gross" : "$1,014,941,117" },
@@ -197,8 +200,7 @@ console.log(oddBonds)
 
 // Determine the total cumulative gross of the Bond franchise, and console.log the result. hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt also.
 
-
-// .replace uses a Regular Expression to match text within a pattern. You can use a metacharacter(which is a character with special meaning) to access a specific character within a pattern (or string in this case). There are lots, but \w can be used to find a word character and \W can be used to find a non-word character.
+// .replace uses a Regular Expression to match text within a pattern. You can use a metacharacter(which is a character with special meaning) to access a specific character within a pattern (or string in this case). There are lots, but \w can be used to find a word character and \W can be used to find a non-word character. The 'g' refers to a flag - global match, which tells it to find all matches in the string instead of just one (i think). So if there were two $ it would replace both.
 
 // create a variable to put the new value in
 let bondGross = 0;
@@ -215,53 +217,35 @@ for(i = 0; i < bondFilms.length; i++) {
 }
 
 console.log(bondGross);
+// Dang this franchise has made so much monies: $13,821,621,224.
+
+
+// DIGGING DEEPER
+// declare a variable to hold the object of the actor in the least films
+let leastBond = {}
+// iterate through the object array
+for(let i = 0; i < bondFilms.length; i++) {
+	// find the actor in the array
+	// count how many times each actor appears
+
+}
+
+// compare the number of appearances
+// push the actore with the least appearances to leastBond
+
+// us a for..in loop in a for loop to get the actor? 
+// then a conditional to compare the number of times, the conditional should be nested in a for loop as well
 
 
 
+// // Just me console.logging to check things out:
+// for (let key in bondFilms[0]) {
+// 	console.log(key);
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// for (let key in bondFilms[0]) {
+// 	console.log(bondFilms[0][key]);
+// }
 
 
 
