@@ -145,7 +145,6 @@ const bondFilms = [
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
 
-
 // BondTitles
 let bondFilmsArray = [];
 
@@ -176,17 +175,29 @@ for (var i = 0; i < bondFilms.length; i++) {
 
 console.log(totalGross);
 
+// DIGGING DEEPER
+let actorFrequency = {};
 
+for (var i = 0; i < bondFilms.length; i++) {
+	actorFrequency[bondFilms[i]["actor"]] = 0; // Fills actorFrequency Object with actors
+}
 
+for (var i = 0; i < bondFilms.length; i++) { 
+	for(key in actorFrequency){ 
+		if (key == bondFilms[i]["actor"]){ // Increments the frequency of each actor by 1 after every occurence 
+			actorFrequency[bondFilms[i]["actor"]] += 1;
+		} 
+	}
+}
 
+let sorted = Object.keys(actorFrequency).sort( // Used sort to list my actors from least frequent to most frequent
+		function(a,b){
+			return actorFrequency[a] - actorFrequency[b]
+		}
+	);
 
-
-
-
-
-
-
-
-
-
-
+for (var i = 0; i < bondFilms.length; i++) {
+	if(bondFilms[i]["actor"] == sorted[0]){ // Returns object containing least frequent actor
+		console.log(bondFilms[i]);
+	}
+};
