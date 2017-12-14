@@ -157,3 +157,37 @@ let onlyOdds = () => {
 onlyOdds();
 
 console.log(oddBonds);
+
+
+
+let grossArray = [];
+
+let totalGross = 0 ;
+
+let calculateGross = () => {
+	for (let i = 0; i < bondFilms.length; i++) {
+		grossArray.push(bondFilms[i].gross);
+	}	
+	// for (let j = 0; j < grossArray.length; j++) {
+	// 	grossArray[j].replace(/$/g, " ");
+	// 	grossArray[j].replace(/,/g, " ");
+	// 	parseInt(grossArray[j], 10);
+	// }
+}
+
+let toNum = () => {
+	for (let j = 0; j < grossArray.length; j++) {
+		grossArray[j].replace(/$/g, " ");
+		grossArray[j].replace(/,/g, " ");
+		parseInt(grossArray[j], 10);
+	}
+}
+
+calculateGross();
+
+toNum();
+
+console.log(grossArray);
+
+// Spent a lot of time reading about .replace() and parseInt() with no luck. 
+
