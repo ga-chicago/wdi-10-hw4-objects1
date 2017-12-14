@@ -192,12 +192,29 @@ for(let i = 0; i < bondFilms.length; i++) {
 		oddBonds.push(bondFilms[i])
 	}
 }
-// pring the oddBonds array
+// print the oddBonds array
 console.log(oddBonds)
 
+// Determine the total cumulative gross of the Bond franchise, and console.log the result. hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt also.
 
 
+// .replace uses a Regular Expression to match text within a pattern. You can use a metacharacter(which is a character with special meaning) to access a specific character within a pattern (or string in this case). There are lots, but \w can be used to find a word character and \W can be used to find a non-word character.
 
+// create a variable to put the new value in
+let bondGross = 0;
+// iterate through the array
+for(i = 0; i < bondFilms.length; i++) {
+	// make new variable to hold gross without $ 
+	// replace uses a regExp and what to replace the character/string with as arguments
+	// full note on how .replace works above, also what the heck \/W/ is
+	let newGross = bondFilms[i].gross.replace(/\W/g, '');
+	// turn the gross into a number **NEED RADIX**
+	let numberGross = parseInt(newGross, 10);
+	// add the numbers to get a total
+	bondGross += numberGross;
+}
+
+console.log(bondGross);
 
 
 
