@@ -133,29 +133,80 @@ const bondFilms = [
 ];
 
 
-let bondTitle = []
+// let bondTitle = []
 
-for(i = 0; i < bondFilms.length; i++){
-	bondTitle.push(bondFilms[i].title)
+// for(i = 0; i < bondFilms.length; i++){
+// 	bondTitle.push(bondFilms[i].title)
+// }
+
+// let oddBond = []
+
+// for(i = 0; i < bondFilms.length; i++){
+// 	if (bondFilms[i].year % 2 == 1) {
+// 		oddBond.push(bondFilms[i])
+// 	}
+// }
+
+// let totalBondRev = 0
+
+// for(i = 0; i < bondFilms.length; i++){
+// 	 //find current bond movie revenue and remove commas
+// 	let cleanStrRev = bondFilms[i].gross.replace(/,/gi, "").replace("$","")
+// 	totalBondRev += parseInt(cleanStrRev, 10)
+// }
+
+// console.log(totalBondRev)
+
+
+
+    //Digging Deeper
+
+// I am going to be shocked if I did this in the most efficient way, but I did figure it out!!!
+
+// Find which actor appeared in the fewest movies
+// Console.log the object that the actor appeared in
+
+let bondActors = {
 }
+//iterated over the bondFilms Array
+for(let i = 0; i < bondFilms.length; i++){
+//For each object in the bondFilm Array I pulled the value for actor and made it a key
+// in the bondActors object
+  bondActors[bondFilms[i].actor] = []
+} 
+let actorKey = Object.keys(bondActors)
+//Push movies from the bondFilms array into the bondActors obj 
+for(let i = 0; i < bondFilms.length; i++){
+  bondActors[bondFilms[i].actor].push(bondFilms[i])
+} console.log(bondActors)
 
-let oddBond = []
 
-for(i = 0; i < bondFilms.length; i++){
-	if (bondFilms[i].year % 2 == 1) {
-		oddBond.push(bondFilms[i])
-	}
-}
+//find shortest array in bondFilms
+let shortest = bondFilms
 
-let totalBondRev = 0
+for(i = 0; i < actorKey.length; i++){
+  if (bondActors[actorKey[i]].length < shortest.length) {
+    shortest = bondActors[actorKey[i]]
+  }
+  else {
+    // do nothing
+  }
+} 
+console.log(shortest[0])
+    
 
-for(i = 0; i < bondFilms.length; i++){
-	 //find current bond movie revenue and remove commas
-	let cleanStrRev = bondFilms[i].gross.replace(/,/gi, "").replace("$","")
-	totalBondRev += parseInt(cleanStrRev, 10)
-}
 
-console.log(totalBondRev)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
