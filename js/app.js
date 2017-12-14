@@ -166,9 +166,15 @@ for (var i = 0; i < bondFilms.length; i++) {
 
 console.log(oddTitles);
 
+// Total Cumulative gross
+let totalGross = 0;
 
+for (var i = 0; i < bondFilms.length; i++) {
+	let stringedGross = parseInt(bondFilms[i]["gross"].replace(/[$,]/g,"")); //Gross amounts in parsed into numbers and special characters removed
+	totalGross += stringedGross;
+};
 
-
+console.log(totalGross);
 
 
 
