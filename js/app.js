@@ -9,22 +9,22 @@
 
 // 1. 
 
-// let rainbowColors = ["red", "orange", "yellow", 'green', 'blue', 'indigo', 'violet'];
+let rainbowColors = ["red", "orange", "yellow", 'green', 'blue', 'indigo', 'violet'];
 
 // // 2. 
 
-// console.log(rainbowColors[4])
+console.log(rainbowColors[4])
 
 // // 3. 
 
-// let anthony = {
-// 	favFood: "tacos",
-// 	hobbies: ["biking"],
-// 	currentHometown: "Chicago, IL",
-// 	favDatatype: "boolean"
-// }
+let anthony = {
+	favFood: "tacos",
+	hobbies: ["biking"],
+	currentHometown: "Chicago, IL",
+	favDatatype: "boolean"
+}
 
-// console.log(anthony.hobbies[0])
+console.log(anthony.hobbies[0])
 
 
 const crazyObject = {
@@ -53,54 +53,54 @@ const crazyObject = {
   }
 }
 
-//// 1.
+// 1.
 
-// console.log(crazyObject.taco[1].salsa[5]);
+console.log(crazyObject.taco[1].salsa[5]);
 
-//// 2. 
+// 2. 
 
-// console.log(crazyObject.larry.quotes[0])
+console.log(crazyObject.larry.quotes[0])
 
 // 3. 
 
-// console.log(crazyObject.larry.characters[2].favourtieHobby)
+console.log(crazyObject.larry.characters[2].favourtieHobby)
 
 // 4.
 
-// console.log(crazyObject.larry.nicknames[1])
+console.log(crazyObject.larry.nicknames[1])
 
 // 5.
 
-// console.log(crazyObject.larry.characters[1])
+console.log(crazyObject.larry.characters[1])
 
 
 
 		//Object-ception
 
 
-// const inception = {
-//    reality: {
-//        dreamLayer1: {
-//            dreamLayer2: {
-//                dreamLayer3: {
-//                    dreamLayer4: {
-//                        dreamLayer5: {
-//                            dreamLayer6: {
-//                                limbo: "Joseph Gordon Levitt"
-//                           }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-// }
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
 
 
 
 // console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo)
 
-// inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = 'null'
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = 'null'
 
 // console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo)
 
@@ -133,29 +133,28 @@ const bondFilms = [
 ];
 
 
-// let bondTitle = []
+let bondTitles = []
+for(i = 0; i < bondFilms.length; i++){
+	bondTitles.push(bondFilms[i].title)
+}
+console.log(bondTitles)
 
-// for(i = 0; i < bondFilms.length; i++){
-// 	bondTitle.push(bondFilms[i].title)
-// }
 
-// let oddBond = []
+let oddBond = []
+for(i = 0; i < bondFilms.length; i++){
+	if (bondFilms[i].year % 2 == 1) {
+		oddBond.push(bondFilms[i].title)
+	}
+}
 
-// for(i = 0; i < bondFilms.length; i++){
-// 	if (bondFilms[i].year % 2 == 1) {
-// 		oddBond.push(bondFilms[i])
-// 	}
-// }
 
-// let totalBondRev = 0
-
-// for(i = 0; i < bondFilms.length; i++){
-// 	 //find current bond movie revenue and remove commas
-// 	let cleanStrRev = bondFilms[i].gross.replace(/,/gi, "").replace("$","")
-// 	totalBondRev += parseInt(cleanStrRev, 10)
-// }
-
-// console.log(totalBondRev)
+let totalBondRev = 0
+for(i = 0; i < bondFilms.length; i++){
+	 //find current bond movie revenue and remove commas
+	let cleanStrRev = bondFilms[i].gross.replace(/,/gi, "").replace("$","")
+	totalBondRev += parseInt(cleanStrRev, 10)
+}
+console.log(totalBondRev)
 
 
 
