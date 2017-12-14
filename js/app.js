@@ -145,6 +145,8 @@ const bondFilms = [
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
 
+
+// BondTitles
 let bondFilmsArray = [];
 
 for (var i = 0; i < bondFilms.length; i++) {
@@ -152,6 +154,30 @@ for (var i = 0; i < bondFilms.length; i++) {
 };
 
 console.log(bondFilmsArray);
+
+// Odd bonds
+let oddTitles = [];
+
+for (var i = 0; i < bondFilms.length; i++) {
+	if (bondFilms[i]['year'] % 2){ // Checks for odd year of film, expression if even evaluates to 0 which does not execute the conditional code
+		oddTitles.push(bondFilms[i]['title']);
+	}
+};
+
+console.log(oddTitles);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
