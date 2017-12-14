@@ -258,5 +258,13 @@ let oddBond = []
 for(i = 0; i < bondFilms.length; i++){
 	if (bondFilms[i].year % 2 == 1) {
 		oddBond.push(bondFilms[i].title)
-	}
+	} 
 }
+
+let bondRev = 0
+for(i = 0; i < bondFilms.length; i++){
+	 //replace special characters
+	let cleanStrRev = bondFilms[i].gross.replace(/,/gi, "").replace("$","")
+	bondRev += parseInt(cleanStrRev, 10)
+}
+console.log(bondRev)
