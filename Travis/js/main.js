@@ -185,14 +185,18 @@ let oddBonds = [];
 console.log(oddBonds);
 
 
-// Determine the total cumulative gross of the Bond franchise, and console.log the result. hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt also.
-let grossBonds = [];
-	for (i in bondFilms){
-		grossBonds.push(bondFilms[i].gross)
-}
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
+//Determine the total cumulative gross of the Bond franchise, and console.log the result. hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt also.
 
-console.log(grossBonds.reduce(reducer));
+
+totalGross = 0;
+
+	for (i in bondFilms){
+ 		let cleanGross = bondFilms[i].gross.replace(/\W/g, '');
+		let parsedGross = parseInt(cleanGross, 10);
+		totalGross += parsedGross;
+}
+
+console.log(totalGross.toLocaleString('en-US', { style: 'currency', currency: 'USD' }));
 
 
 
