@@ -17,7 +17,7 @@ Competencies: Objects, Arrays, Loops <br>
 
 
 ---
-# Homework 4: Objects 
+# Homework 4: Objects
 
 ## Assigned: Tuesday 12/12/2017
 
@@ -216,7 +216,7 @@ If you're thinking about splitting this up into two days, this might be a nice s
 
 <hr>
 
-## Digging Deeper 
+## Digging Deeper
 
 ### CHALLENGE
 
